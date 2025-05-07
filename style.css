@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+}
+
+aside {
+    height: 100dvh;
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 80px;
+    grid-template-areas: 
+    "ruleta"
+    "result";
+
+}
+
+#aside {
+    justify-content: center;
+    color: aliceblue;
+    text-align: center;
+    align-content: center;
+    gap: 3px;
+    background-color: lightskyblue;
+    grid-area: ruleta;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(14, 50px);
+    grid-template-areas:
+        "n0 n0 n0"
+        "n1 n2 n3"
+        "n4 n5 n6"
+        "n7 n8 n9"
+        "n10 n11 n12"
+        "n13 n14 n15"
+        "n16 n17 n18"
+        "n19 n20 n21"
+        "n22 n23 n24"
+        "n25 n26 n27"
+        "n28 n29 n30"
+        "n31 n32 n33"
+        "n34 n35 n36"
+        "gira gira gira"
+        ;
+}
+.gira {
+    border: none;
+    border-radius: 10px;
+    grid-area: gira;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.gira:hover {
+    cursor: pointer;
+    background-color: #0011ff7e;
+}
+
+.gira:active {
+    scale: 0.8;
+    background-color: blue;
+    transition: all 0.1s ease-in-out;
+}
+
+.num0 { grid-area: n0; background-color: green; align-content: center;}
+.num1 { grid-area: n1; background-color: red; align-content: center;}
+.num2 { grid-area: n2; background-color: black; align-content: center;}
+.num3 { grid-area: n3; background-color: red; align-content: center;}
+.num4 { grid-area: n4; background-color: black; align-content: center;}
+.num5 { grid-area: n5; background-color: red; align-content: center;}
+.num6 { grid-area: n6; background-color: black; align-content: center;}
+.num7 { grid-area: n7; background-color: red; align-content: center;}
+.num8 { grid-area: n8; background-color: black; align-content: center;}
+.num9 { grid-area: n9; background-color: red; align-content: center;}
+.num10 { grid-area: n10; background-color: black; align-content: center;}
+.num11 { grid-area: n11; background-color: black; align-content: center;}
+.num12 { grid-area: n12; background-color: red; align-content: center;}
+.num13 { grid-area: n13; background-color: black; align-content: center;}
+.num14 { grid-area: n14; background-color: red; align-content: center;}
+.num15 { grid-area: n15; background-color: black; align-content: center;}
+.num16 { grid-area: n16; background-color: red; align-content: center;}
+.num17 { grid-area: n17; background-color: black; align-content: center;}
+.num18 { grid-area: n18; background-color: red; align-content: center;}
+.num19 { grid-area: n19; background-color: red; align-content: center;}
+.num20 { grid-area: n20; background-color: black; align-content: center;}
+.num21 { grid-area: n21; background-color: red; align-content: center;}
+.num22 { grid-area: n22; background-color: black; align-content: center;}
+.num23 { grid-area: n23; background-color: red; align-content: center;}
+.num24 { grid-area: n24; background-color: black; align-content: center;}
+.num25 { grid-area: n25; background-color: red; align-content: center;}
+.num26 { grid-area: n26; background-color: black; align-content: center;}
+.num27 { grid-area: n27; background-color: red; align-content: center;}
+.num28 { grid-area: n28; background-color: black; align-content: center;}
+.num29 { grid-area: n29; background-color: black; align-content: center;}
+.num30 { grid-area: n30; background-color: red; align-content: center;}
+.num31 { grid-area: n31; background-color: black; align-content: center;}
+.num32 { grid-area: n32; background-color: red; align-content: center;}
+.num33 { grid-area: n33; background-color: black; align-content: center;}
+.num34 { grid-area: n34; background-color: red; align-content: center;}
+.num35 { grid-area: n35; background-color: black; align-content: center;}
+.num36 { grid-area: n36; background-color: red; align-content: center;}
+
+.textChange {
+    
+    align-content: center;
+    color: white;
+    text-align: center;
+    grid-area: result;
+    margin: 5px ;
+    background-color: rgb(0, 0, 0);
+}
