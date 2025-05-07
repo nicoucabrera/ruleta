@@ -14,6 +14,18 @@ aside {
 
 }
 
+@media (max-width: 400px) {
+    aside {
+        max-height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 80px;
+        grid-template-areas: 
+        "ruleta"
+        "result";
+    }
+    
+}
+
 #aside {
     justify-content: center;
     color: aliceblue;
