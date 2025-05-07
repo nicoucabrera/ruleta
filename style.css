@@ -3,6 +3,7 @@ body {
 }
 
 aside {
+    background-color: black;
     height: 100dvh;
     grid-area: aside;
     display: grid;
@@ -16,7 +17,7 @@ aside {
 
 @media (max-width: 400px) {
     aside {
-        max-height: 600px;
+        max-height: min-content;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 80px;
         grid-template-areas: 
